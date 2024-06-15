@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload</title>
+</head>
+<body>
+    <h1>Video Upload</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="videoType">Select Video Type:</label>
+        <select id="videoType" name="videoType">
+            <option value="a">Type A</option>
+            <option value="b">Type B</option>
+            <option value="c">Type C</option>
+            <option value="d">Type D</option>
+            <option value="e">Type E</option>
+            <option value="f">Type F</option>
+            <option value="g">Type G</option>
+        </select>
+        <br><br>
+        <input type="file" name="videoFile" id="videoFile" accept="video/*">
+        <br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
